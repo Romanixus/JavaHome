@@ -14,18 +14,19 @@ public class Main {
         Person arseniy = new Person("Арсений");
         Person viktoria = new Person("Виктория");
 
-        gt.appChild(elena, lyudmila);
-        gt.appChild(elena, lyubov);
-        gt.appChild(elena, sergey);
-        gt.appChild(lyudmila, ekaterina);
-        gt.appChild(anatoliy, olga);
-        gt.appChild(lyubov, olga);
-        gt.appChild(sergey, irina);
-        gt.appChild(olga, roman);
-        gt.appChild(olga, arseniy);
-        gt.appChild(olga, viktoria);
+        gt.addChild(elena, lyudmila);
+        gt.addChild(elena, lyubov);
+        gt.addChild(elena, sergey);
+        gt.addChild(lyudmila, ekaterina);
+        gt.addChild(anatoliy, olga);
+        gt.addChild(lyubov, olga);
+        gt.addChild(sergey, irina);
+        gt.addChild(olga, roman);
+        gt.addChild(olga, arseniy);
+        gt.addChild(olga, viktoria);
 
-        View.viewChildren(olga, gt);
-        View.viewParents(olga, gt);
+        gt.view(olga, Relationship.parent);
+        gt.view(olga, Relationship.child);
+
     }
 }

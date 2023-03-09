@@ -1,18 +1,17 @@
 public class Node {
+    Person person1;
+    Relationship relationship;
+    Person person2;
 
     public Node(Person p1, Relationship re, Person p2) {
-        this.p1 = p1;
-        this.re = re;
-        this.p2 = p2;
+        this.person1 = p1;
+        this.relationship = re;
+        this.person2 = p2;
     }
-
-    Person p1;
-    Relationship re;
-    Person p2;
 
     @Override
     public String toString() {
-        return String.format("<%s %s %s>", p1, re, p2);
+        return String.format("<%s %s %s>", person1, relationship, person2);
     }
 
 }
