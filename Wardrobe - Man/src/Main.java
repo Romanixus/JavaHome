@@ -14,12 +14,12 @@ public class Main {
         System.out.println(shirt);
         System.out.println(pants);
 
-        System.out.println(human.open(doorR.toString()));
-        System.out.println(human.get(shirt.getModel()));
-        System.out.println(human.close(doorR.toString()));
-        System.out.println(wardrobe.script());
-        System.out.println(human.open(doorL.toString()));
-        System.out.println(human.get(pants.getModel()));
-        System.out.println(human.close(doorL.toString()));
+        human.open(doorR.toString());
+        human.get(shirt.toString());
+        human.close(doorR.toString());
+        wardrobe.scrip();
+        human.open(doorL.toString());
+        human.get(pants.toString());
+        human.close(doorL.toString());
     }
 }

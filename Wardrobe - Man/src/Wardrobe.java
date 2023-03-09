@@ -1,20 +1,20 @@
-public class Wardrobe {
+public class Wardrobe{
 
     private String model;
     public Wardrobe(String model) {
         this.model = model;
     }
     public String getModel() {
-        return model;
+        return this.model;
     }
     public void setModel(String model) {
         this.model = model;
     }
     @Override
     public String toString() {
-        return model;
+        return this.model;
     }
-    public String script() {
-        return this.model + " скрипит";
+    public void scrip() {
+        System.out.println(model + " скрипит");
     }
 }

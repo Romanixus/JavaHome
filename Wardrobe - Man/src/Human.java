@@ -1,4 +1,4 @@
-public class Human extends Animal {
+public class Human extends Animal implements Gettable {
     private String name;
     public Human(String name) {
         super("Человек");
@@ -16,14 +16,14 @@ public class Human extends Animal {
         String animalClass = super.toString();
         return animalClass + " " + this.name;
     }
-    public String open(String model){
-        return this.name + " открывает " + model;
+    public void open(String model){
+        System.out.println(this.name + " открывает " + model);
     }
-    public String get(String model){
-        return this.name + " берёт " + model;
+    public void get(String model){
+        System.out.println(this.name + " берёт " + model);
     }
-    public String close(String model){
-        return this.name + " закрывает " + model;
+    public void close(String model){
+        System.out.println(this.name + " закрывает " + model);
     }
 
 }

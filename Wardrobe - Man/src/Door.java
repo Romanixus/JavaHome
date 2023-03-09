@@ -1,4 +1,4 @@
-public class Door extends Wardrobe{
+public class Door extends Thing{
     private String name;
     public Door(String name) {
         super("Дверца");
@@ -13,6 +13,6 @@ public class Door extends Wardrobe{
     @Override
     public String toString() {
         String wardrobeClass = super.toString();
-        return this.name + " " + wardrobeClass;
+        return wardrobeClass + " " + this.name;
     }
 }

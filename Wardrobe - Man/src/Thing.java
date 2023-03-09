@@ -1,16 +1,22 @@
-public abstract class Animal {
+public abstract class Thing {
+
     private String model;
-    public Animal(String model) {
+
+    public Thing(String model) {
         this.model = model;
     }
+
     public String getModel() {
         return model;
     }
-    public void setModel(String model) {
-        this.model = model;
-    }
+
     @Override
     public String toString() {
         return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+
     }
 }

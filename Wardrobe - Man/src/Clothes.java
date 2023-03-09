@@ -1,4 +1,4 @@
-public class Clothes extends Wardrobe {
+public class Clothes extends Thing {
     private String model;
     public Clothes(String model) {
         super("Одежда");
@@ -13,7 +13,7 @@ public class Clothes extends Wardrobe {
 
     @Override
     public String toString() {
-        String wardrobeClass = super.toString();
-        return this.model + " (" + wardrobeClass + ")";
+        String thingClass = super.toString();
+        return thingClass + " " + this.model;
     }
 }
