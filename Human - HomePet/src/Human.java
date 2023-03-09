@@ -1,6 +1,5 @@
-public class Human extends Animal {
+public class Human extends Animal implements Voiceable {
     private String name;
-    public static String command;
     public Human(String name) {
         super("Человек");
         this.name = name;
@@ -18,7 +17,9 @@ public class Human extends Animal {
     public String toString() {
         return super.toString() + " " + this.name;
     }
-    public void voice (String command) {
+
+    @Override
+    public void voice(String command) {
         System.out.println(this.name + " говорит: '" + command + "'");
     }
 }

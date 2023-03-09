@@ -1,4 +1,4 @@
-public class Dog extends Animal {
+public class Dog extends Animal implements Actionable {
     private String name;
     public Dog(String name) {
         super("Пёс");
@@ -18,7 +18,8 @@ public class Dog extends Animal {
         return super.toString() + " " + this.name;
     }
 
-    public void action (String command) {
+    @Override
+    public void action(String command) {
         if (command != null) {
             switch (command) {
                 case "голос" -> System.out.println(name + " гавкает");

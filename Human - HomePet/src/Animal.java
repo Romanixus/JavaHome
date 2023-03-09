@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String model;
     public Animal(String model) {
         this.model = model;
