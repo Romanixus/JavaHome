@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Research {
     ArrayList<String> result = new ArrayList<>();
@@ -9,9 +8,9 @@ public class Research {
         this.tree = geoTree;
     }
 
-    public ArrayList<String> get(Person p, Relationship re) {
+    public ArrayList<String> get(Person person, Relationship relationship) {
         for (Node node : tree) {
-            if (Objects.equals(node.person1.getName(), p.getName()) && node.relationship == re) {
+            if (node.person1.getName().equals(person.getName()) && node.relationship == relationship) {
                 result.add(node.person2.getName());
             }
         }

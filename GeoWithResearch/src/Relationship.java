@@ -1,4 +1,4 @@
 public enum Relationship {
-    parent,
-    child
+    isParent,
+    isChild
 }
