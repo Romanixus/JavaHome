@@ -1,7 +1,6 @@
-public class Clothes extends Thing {
+public class Clothes {
     private String model;
     public Clothes(String model) {
-        super("Одежда");
         this.model = model;
     }
     public String getModel() {
@@ -13,7 +12,6 @@ public class Clothes extends Thing {
 
     @Override
     public String toString() {
-        String thingClass = super.toString();
-        return thingClass + " " + this.model;
+        return this.model;
     }
 }

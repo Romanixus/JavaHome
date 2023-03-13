@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class Wardrobe{
 
     private String model;
+    ArrayList<Clothes> within = new ArrayList<>();
     public Wardrobe(String model) {
         this.model = model;
     }
